@@ -57,10 +57,10 @@ const userSchema = mongoose.Schema(
 const User = mongoose.model('User', userSchema);
 
 const app = express();
-// const corsOptions = {
-//   origin: 'https://tasktrackerjavascript.onrender.com', // frontend URL
-// };
-// app.use(cors(corsOptions));
+const corsOptions = {
+  origin: 'https://tast-tracker-pi.vercel.app', // frontend URL
+};
+app.use(cors(corsOptions));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
