@@ -58,7 +58,7 @@ const User = mongoose.model('User', userSchema);
 
 const app = express();
 const corsOptions = {
-  origin: 'https://tast-tracker-pi.vercel.app', // frontend URL
+  origin: 'https://task-tracker-client-zeta.vercel.app', // frontend URL
 };
 app.use(cors(corsOptions));
 
